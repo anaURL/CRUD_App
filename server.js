@@ -38,7 +38,11 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
 
       })
 
+<<<<<<< HEAD
     app.put('/quotes', (req,res) =>  {
+=======
+      app.put('/quotes', (req,res) =>  {
+>>>>>>> 64c9acddfbb328c1fad63e74278c50b948cb7af0
           quotesCollection.findOneAndUpdate (
               {name: 'Audre Lorde' },
               {
@@ -55,7 +59,11 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
           .catch(error=> console.error(error))
       })
 
+<<<<<<< HEAD
     app.delete('/quotes', (req, res) => {
+=======
+      app.delete('/quotes', (req, res) => {
+>>>>>>> 64c9acddfbb328c1fad63e74278c50b948cb7af0
         quotesCollection.deleteOne(
           { name: req.body.name }
         )
